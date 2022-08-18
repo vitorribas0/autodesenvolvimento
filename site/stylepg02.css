@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'b2';
+    src: url('../__MACOSX/fontes/b2.otf') format('opentype');
+
+}
+
+    
+
+header{
+    background-image: linear-gradient(to bottom, #39cb79,#1A5C38);
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 15px;
+}
+header h1{
+    text-align: center;
+    font-family: "b2";
+
+}
+header p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 17px;
+}
+main{
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+body{
+    background-color:lightblue ;
+}
+nav{
+    margin: auto;
+    background-color: #1a5c37;
+    max-width: 800px;
+    padding-bottom: 5px;
+}
+a{
+    color: white;
+    text-decoration: none;  
+}
+*{
+    margin: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    text-align: justify;
+}
+main ul{
+    margin-left: 20px;
+}
+abbr{
+    text-decoration: none;
+}
+abbr:hover{
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+footer{
+    text-align: center;
+    background-color: #1a5c37;
+    margin-top: 15px;
+    margin-left: 2px;
+
+}
+main img{
+    max-width: 750px;
+    margin: 10px 15px;
+}
+.setadireita{
+    text-align: right;
+    color: black;
+    margin-left: 280px;
+}
+.setaesquerda{
+    text-align: right;
+    color: black;
+    margin: 10px;
+}
+
+.setadireita,.setaesquerda{
+    display: inline;
+    
+}
+

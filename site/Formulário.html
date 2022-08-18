@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário | Vitor Ribas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(29, 26, 26));
+        }
+        .box{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(63, 50, 50, 0.6);
+            padding: 40px;
+            border-radius: 20px;
+            width: 30%;
+        }
+        fieldset{
+            border: 3px solid rgb(252, 252, 252);
+        }
+        legend{
+            border: 1px solid dodgerblue;
+            padding: 10px;
+            text-align: center;
+            background-color: dodgerblue;
+            border-radius: 8px;
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: dodgerblue;
+        }
+        #data_nascimento{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+        #submit{
+            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+        #submit:hover{
+            background-image: linear-gradient(to right,rgb(0, 100, 172), rgb(90, 19, 195));
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Receita e Despesa 2022</b></legend>
+                <br>
+                <div class="inputBox">
+                    <label for="Data"><b>Data:</b></label>
+                    <input type="date" name="data" id="Data" required>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="Valor:" id="Valor:" class="inputUser" required>
+                    <label for="Valor:" class="labelInput"><b>Valor:<b></label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="Fornecedor:" id="Fornecedor:" class="inputUser" required>
+                    <label for="Fornecedor:" class="labelInput"><b>Fornecedor:<b></label>
+                <br>
+                <br>
+                <div class="campo">
+                    <label for="Conta"><strong>Conta</strong></label>
+                    <select id="Conta" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>ITÁU/POUPANÇA 1272/21410-5</option>
+                        <option>ITAU/CONTA CORRENTE 8263/ 47741-9</option>
+                        <option>NUBANK 0001/58934331-2</option>
+                        <option>PICPAY 0001/27860350-5</option>
+                        <option>DINHEIRO</option>
+                        <option>ITÁU/VISA 8851 C/C</option>
+                        <option>ITÁU/MASTE 6762 C/C</option>
+                        <option>PICPAY/MASTE 2027 C/C</option>
+                        <option>C6 BANK 0001/16622354-9</option>
+                        <OPtion>CLEAR 0002/274443-7</OPtion>
+                        <OPtion>C6 BANK/MAST 5488 C/C</OPtion>         
+                      
+                    </select>
+                </div>
+                <br>
+                <br>
+                <div class="campo">
+                    <label for="Conta"><strong>Tipo:</strong></label>
+                    <select id="Conta" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>ENTRADA</option>
+                        <option>ENTRADA/INVESTIMENTO</option>
+                        <OPtion>SAÍDA</OPtion>
+                        <OPtion>CARTÃO DE CRÉDITO/SAÍDA</OPtion>
+                        <OPtion>INVESTIMENTO</OPtion>
+                        <OPtion>EMPRESTEI/SAÍDA</OPtion>
+                        <OPtion>EMPRESTEI/ENTRADA</OPtion>
+                        <OPtion>REEMBOLSO/SAÍDA</OPtion>
+                        <OPtion>REEMBOLSO/ENTRADA</OPtion>
+                        <OPtion>DIVIDENDO</OPtion>
+                            
+            
+                    </select>
+
+                <br><br><br>
+                <div class="inputBox">
+                    <input type="text" name="Juros:" id="Juros:" class="inputUser" required>
+                    <label for="Juros:" class="labelInput">Juros:</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="Observação:" id="Observação:" class="inputUser" required>
+                    <label for="Observação:" class="labelInput">Observação:</label>
+                </div>
+                <br><br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html> 

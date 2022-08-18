@@ -7,7 +7,8 @@
 
 }
 
-   
+    
+
 header{
     background-image: linear-gradient(to bottom, #39cb79,#1A5C38);
     color: white;
@@ -37,17 +38,32 @@ main{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-   
-
+div.video1{
+    background-color: #1a5c37;
+    margin-left: -7.8px;
+    margin-right: -7.8px;
+    margin-bottom: 30px;
+    padding: -3px;
+    position: relative;
+    padding-bottom: 57%;
+}
+div.video1 > iframe{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    right: 3%;
+    width: 90%;
+    height: 90%;
+    
+}
 main p{
     text-indent: 30px;
 }
 main h1{
     padding-bottom: 6px;
-    text-align: center;
 }
 body{
-    background-color: #84E1AD;
+    background-color:#84E1AD ;
 }
 nav{
     margin: auto;
@@ -68,23 +84,34 @@ a{
 .p1{
     text-indent: 5px;
 }
+.dan-droids img{
+    margin-left: -44px;
+    padding: 0px;
+    max-width: 100%;
+    
+}
+.irinablock{
+    margin: -16px;
+}
+.androidpq{
+    width: 650px;
+    max-width: 100px;
+}
+main li{
+    margin-left: 20px;
+}
 footer{
     text-align: center;
     background-color: #1a5c37;
     margin-top: 15px;
     margin-left: 2px;
-    font-weight: bolder;
-}
 
-.video01{
-    max-width: 750px;
-    margin: 10px;
-    margin: center;
-    margin-left: 15px;
 }
-
-.setadireita{
-    text-align: right;
-    color: black;
-    margin: 10px;
+main h3{
+    background-color: #1a5c37;
+    text-align: center;
+    margin-left: -8.9px;
+    margin-right: -8.9px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }

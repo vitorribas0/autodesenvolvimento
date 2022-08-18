@@ -43,14 +43,14 @@ main h1{
 }
 main ul{
     margin-left: 20px;
-    columns: 3;
+    columns: 1;
     margin-left: 40px 0px;
     padding-bottom: 40px;
     padding-top: 30px;
 }
 
 body{
-    background-color:#84E1AD ;
+    background-color:lightblue ;
 }
 nav{
     margin: auto;
@@ -78,8 +78,12 @@ a{
     padding-bottom: 4px;
     text-align: justify;
 }
-main ul{
+main li:hover{
+    text-decoration: underline;
     
+}
+main a{
+    color: black;
 }
 footer{
     text-align: center;
